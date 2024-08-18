@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: url('hint.jpg') no-repeat center center fixed; /* Setzt das hochgeladene Bild als Hintergrund */
-            background-size: cover; /* Deckt den gesamten Bildschirm mit dem Bild ab */
+            background: url('hint.jpg') no-repeat center center fixed;
+            background-size: cover;
             margin: 0;
             padding: 0;
             display: flex;
@@ -20,17 +20,19 @@
         }
         .container {
             max-width: 900px;
+            width: 90%; /* Flexibles Layout für kleinere Bildschirme */
             padding: 20px;
             border-radius: 15px;
-            background: rgba(255, 255, 255, 0.85); /* Halbtransparenter weißer Hintergrund */
+            background: rgba(255, 255, 255, 0.85);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             display: flex;
+            flex-direction: column; /* Anpassung des Layouts für kleinere Bildschirme */
             align-items: center;
             gap: 20px;
         }
         .avatar {
-            width: 200px;
-            height: 200px;
+            width: 150px; /* Kleinere Größe für Mobilgeräte */
+            height: 150px;
             border-radius: 50%;
             background-color: #f5f5f5;
             object-fit: cover;
@@ -38,56 +40,61 @@
         }
         .text-section {
             max-width: 600px;
+            width: 100%; /* Volle Breite für kleinere Bildschirme */
+            text-align: center; /* Zentrierter Text für ein besseres Layout auf Mobilgeräten */
         }
         h1 {
-            font-size: 48px;
+            font-size: 36px; /* Anpassung der Schriftgröße für Mobilgeräte */
             margin: 0;
             color: #333;
         }
         h2 {
-            font-size: 18px;
-            color: #555;
+            font-size: 20px; /* Anpassung der Schriftgröße für Mobilgeräte */
+            color: #333;
             margin: 5px 0 20px 0;
         }
         p {
-            font-size: 18px;
-            color: #666;
+            font-size: 16px; /* Anpassung der Schriftgröße für Mobilgeräte */
+            color: #333;
             margin-bottom: 20px;
         }
         .button {
             display: inline-block;
-            padding: 15px 30px;
-            font-size: 16px;
+            padding: 12px 25px; /* Kleinere Schaltflächen für Mobilgeräte */
+            font-size: 14px;
             margin: 5px;
             border-radius: 30px;
             text-decoration: none;
             color: #333;
-            background-color: #ffffbf; /* Button-Farbe */
+            background-color: #ffffbf;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .button.secondary {
-            background-color: #ffffbf; /* Button-Farbe */
-        
-        .emoji {
-            font-size: 20px;
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row; /* Desktop: Inhalte nebeneinander */
+            }
+            .text-section {
+                text-align: left;
+            }
+            .avatar {
+                width: 200px;
+                height: 200px;
+            }
+            h1 {
+                font-size: 48px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .button {
+                padding: 15px 30px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Avatar Bild -->
-        <img src="sticker-2.png" alt="Beyzanur Altinay" class="avatar">
-        
-        <div class="text-section">
-            <h1>Beyzanur Altinay</h1>
-            <h2>Business Information Systems, Bachelor of Science </h2>
-            <p>Ich bin eine Wirtschaftsinformatik-Absolventin mit einer Leidenschaft für <strong>kollaborative Technologien</strong>, die Prozesse optimieren und innovative Lösungen vorantreiben.</p>
-            <p>Die besten Ideen entstehen bei einem Kaffeedate mit mir selbst ☕.</p>
-
-            <!-- Schaltflächen -->
-            <a href="mailto:beyzanuraltinay@hotmail.de" class="button">Send a Mail</a>
-            <a href="Beyzanur Altinay | LB-2.pdf" class="button secondary">View Resume</a>
-        </div>
-    </div>
-</body>
-</html>
+    <div class="
