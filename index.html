@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #f5f7fa, #e3e7ee); /* Ähnlicher Hintergrund */
+            background: url('hint.jpg') no-repeat center center fixed; /* Setzt das hochgeladene Bild als Hintergrund */
+            background-size: cover; /* Deckt den gesamten Bildschirm mit dem Bild ab */
             margin: 0;
             padding: 0;
             display: flex;
@@ -21,7 +22,7 @@
             max-width: 900px;
             padding: 20px;
             border-radius: 15px;
-            background: #fff;
+            background: rgba(255, 255, 255, 0.85); /* Halbtransparenter weißer Hintergrund */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
@@ -60,12 +61,12 @@
             margin: 5px;
             border-radius: 30px;
             text-decoration: none;
-            color: #fff;
-            background-color: #f76c6c;
+            color: #333;
+            background-color: #ffffbf; /* Button-Farbe */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         .button.secondary {
-            background-color: #56c1ff;
+            background-color: #ffffbf; /* Button-Farbe */
         }
         .emoji {
             font-size: 20px;
@@ -85,7 +86,7 @@
             
             <!-- Schaltflächen -->
             <a href="mailto:beyzanuraltinay@hotmail.de" class="button">Send a Mail</a>
-            <a href="https://example.com/resume.pdf" class="button secondary">View Resume</a>
+            <a href="Beyzanur Altinay | LB-2.pdf" class="button secondary">View Resume</a>
         </div>
     </div>
 </body>
