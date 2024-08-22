@@ -42,7 +42,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('IMG_3319.jpg') no-repeat center center/cover;
+            background: url('IMG_3318.jpeg') no-repeat center center/cover;
             text-align: center;
             padding: 20px;
         }
@@ -78,9 +78,18 @@
         }
 
         .social-icons a {
-            color: #fff;
-            font-size: 1.5em;
             text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 40px;  /* Größe des Icons */
+            height: 40px;  /* Größe des Icons */
+            border-radius: 5px;  /* Abgerundete Ecken für den Button-Effekt */
+            transition: transform 0.3s;  /* Animation bei Hover */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);  /* Vergrößerung bei Hover */
         }
 
         footer {
@@ -96,8 +105,6 @@
             margin: 0;
         }
     </style>
-    <!-- FontAwesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -118,8 +125,12 @@
             <p>Ich bin eine Wirtschaftsinformatik-Absolventin mit einer Leidenschaft für <strong>kollaborative Technologien</strong>, die Prozesse optimieren und innovative Lösungen vorantreiben.</p>
             <p>Die besten Ideen entstehen bei einem Kaffeedate mit mir selbst ☕.</p>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/beyzanuraltinay" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/byzaltny" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/beyzanuraltinay" target="_blank">
+                    <img src="linkedin_c.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/byzaltny" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
             </div>
         </div>
     </section>
