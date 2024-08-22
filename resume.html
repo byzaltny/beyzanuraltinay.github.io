@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyzanur Altinay - Lebenslauf</title>
+    <title>Beyzanur Altinay</title>
     <style>
         body {
             margin: 0;
@@ -37,43 +37,129 @@
             font-weight: bold;
         }
 
-        .content-section {
-            padding: 100px 20px;
-            text-align: left;
-            min-height: 100vh;
-            line-height: 1.6em;
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('IMG_3319.jpg') no-repeat center center/cover;
+            text-align: center;
+            padding: 20px;
         }
 
-        .content-section h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        .hero-content {
+            max-width: 600px;
+            padding: 0 15px;
         }
 
-        .content-section h2 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-            color: #f39c12;
-        }
-
-        .content-section p {
-            font-size: 1.2em;
+        .hero-content h1 {
+            font-size: 3em;
             margin-bottom: 10px;
         }
 
-        .content-section .info-section {
-            margin-bottom: 30px;
+        .hero-content h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 40px;  /* Größe des Icons */
+            height: 40px;  /* Größe des Icons */
+            border-radius: 5px;  /* Abgerundete Ecken für den Button-Effekt */
+            transition: transform 0.3s;  /* Animation bei Hover */
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);  /* Vergrößerung bei Hover */
         }
 
         footer {
             background-color: #222;
             text-align: center;
             padding: 20px 0;
-            position: relative;
+            position: absolute;
             width: 100%;
+            bottom: 0;
         }
 
         footer p {
             margin: 0;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-content h2 {
+                font-size: 1.5em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+
+            .social-icons img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-section {
+                padding: 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 2em;
+            }
+
+            .hero-content h2 {
+                font-size: 1.2em;
+            }
+
+            .hero-content p {
+                font-size: 0.9em;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+
+            footer {
+                padding: 15px 0;
+            }
         }
     </style>
 </head>
@@ -82,63 +168,27 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="projekte.html">Projekte</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="content-section">
-        <h1>Beyzanur Altinay</h1>
-        <div class="info-section">
-            <p>Email: <a href="mailto:beyzanuraltinay@hotmail.de" style="color: #f39c12;">beyzanuraltinay@hotmail.de</a></p>
-        </div>
-        
-         <h2>Persönliche Informationen</h2>
-        <div class="info-section">
-            <p>Geboren am 13.06.1997 in Ehingen (Donau)</p>
-        </div>
-        
-        <h2>Praktische Erfahrung</h2>
-        <div class="info-section">
-            <p><strong>Praktikantin und Werkstudentin bei Transporeon by Trimble</strong></p>
-            <p>01/2022 - 08/2024 | Customer Technology Second Level</p>
-            <p><strong>Werkstudentin bei Invisium GmbH</strong></p>
-            <p>07/2021 - 11/2021 | Assistenz der Geschäftsleitung, Recherche und Implementierung von Cloud-Services</p>
-            <p><strong>Kassiererin bei Mode und Design Reischmann Ulm</strong></p>
-            <p>07/2018 - 03/2019 | Abwicklung von Zahlungsvorgängen, Kassenabstimmung und Kundenservice</p>
-            <p><strong>Kassiererin bei abt in Ulm</strong></p>
-            <p>11/2019 - 07/2021 | Abwicklung von Zahlungsvorgängen, Kassenabstimmung und Kundenservice</p>
-            <p><strong>Kassiererin bei Peek & Cloppenburg KG Ulm</strong></p>
-            <p>02/2017 - 08/2017 | Abwicklung von Zahlungsvorgängen, Kassenabstimmung und Kundenservice</p>
-        </div>
-
-        <h2>Bildungsweg</h2>
-        <div class="info-section">
-            <p><strong>Wirtschaftsinformatik, Bachelor of Science</strong></p>
-            <p>09/2018 - 08/2024 | Technische Hochschule Ulm und Hochschule für angewandte Wissenschaften Neu-Ulm</p>
-            <p><strong>Wirtschaftsoberschule, Fachgebundene Hochschulreife</strong></p>
-            <p>09/2017 - 07/2018 | Berufliche Schule Riedlingen</p>
-            <p><strong>Berufskolleg I und II, Fachhochschulreife + staatl. geprüfte Wirtschaftsassistentin</strong></p>
-            <p>09/2015 - 07/2017 | Kaufmännische Schule Ehingen</p>
-        </div>
-
-        <h2>IT Kenntnisse</h2>
-        <div class="info-section">
-            <p>Microsoft Office, Java, Python, MySQL, PostgreSQL, Kibana, Python, OpenAI API, PowerBI</p>
-        </div>
-
-        <h2>Projekt-Erfahrung</h2>
-        <div class="info-section">
-            <p><strong>2024 - Teilnahme am Creativity World Forum</strong></p>
-            <p>Reimagine urban space: Collaborative Governance Models, Zusammenarbeit mit Gruppenmitgliedern aus 8 verschiedenen Ländern</p>
-            <p><strong>2023 - Design Thinking Projekt</strong></p>
-            <p>Future of Construction Logistics, Zusammenarbeit mit GEDA GmbH und Kooperation mit COLMAN Universität Tel Aviv, Israel</p>
-        </div>
-
-        <h2>Weiterbildung</h2>
-        <div class="info-section">
-            <p>2022 - Ausbildereignungprüfung nach der AEVO mit Erfolg abgelegt</p>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Beyzanur Altinay</h1>
+            <h2>Wirtschaftsinformatik, Bachelor of Science</h2>
+            <p>Ich bin eine Wirtschaftsinformatik-Absolventin mit einer Leidenschaft für <strong>kollaborative Technologien</strong>, die Prozesse optimieren und innovative Lösungen vorantreiben.</p>
+            <p>Die besten Ideen entstehen bei einem Kaffeedate mit mir selbst ☕.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/beyzanuraltinay" target="_blank">
+                    <img src="in.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/byzaltny" target="_blank">
+                    <img src="hub.png" alt="GitHub">
+                </a>
+            </div>
         </div>
     </section>
 
