@@ -49,6 +49,7 @@
 
         .hero-content {
             max-width: 600px;
+            padding: 0 15px;
         }
 
         .hero-content h1 {
@@ -103,6 +104,62 @@
 
         footer p {
             margin: 0;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-content h2 {
+                font-size: 1.5em;
+            }
+
+            .hero-content p {
+                font-size: 1em;
+            }
+
+            .social-icons img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-section {
+                padding: 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 2em;
+            }
+
+            .hero-content h2 {
+                font-size: 1.2em;
+            }
+
+            .hero-content p {
+                font-size: 0.9em;
+            }
+
+            .social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+
+            footer {
+                padding: 15px 0;
+            }
         }
     </style>
 </head>
