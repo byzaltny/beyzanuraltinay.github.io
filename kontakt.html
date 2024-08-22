@@ -83,6 +83,48 @@
         footer p {
             margin: 0;
         }
+
+        /* Media Queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .contact-section {
+                padding: 80px 15px;
+            }
+
+            .contact-section h1 {
+                font-size: 2em;
+            }
+
+            .contact-details {
+                font-size: 1em;
+            }
+
+            footer {
+                padding: 15px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-section h1 {
+                font-size: 1.8em;
+            }
+
+            .contact-details {
+                font-size: 0.9em;
+            }
+
+            .social-icons a {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
