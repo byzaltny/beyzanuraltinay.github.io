@@ -3,114 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyzanur Altinay - Bachelor of Science</title>
+    <title>Beyzanur Altinay</title>
     <style>
         body {
+            margin: 0;
             font-family: 'Arial', sans-serif;
-            background: url('hint.jpg') no-repeat center center fixed;
-            background-size: cover;
+            color: #fff;
+            background-color: #111;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            text-align: left;
-            color: #333;
-        }
-        .container {
-            max-width: 900px;
-            width: 90%; /* Flexibles Layout für kleinere Bildschirme */
-            padding: 20px;
-            border-radius: 15px;
-            background: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column; /* Spaltenlayout für kleinere Bildschirme */
-            align-items: center;
             gap: 20px;
         }
-        .avatar {
-            width: 150px; /* Kleinere Größe für Mobilgeräte */
-            height: 150px;
-            border-radius: 50%;
-            background-color: #f5f5f5;
-            object-fit: cover;
-            flex-shrink: 0;
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .text-section {
+
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('img_3318.jpeg') no-repeat center center/cover;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
             max-width: 600px;
-            width: 100%; /* Volle Breite für kleinere Bildschirme */
-            text-align: center; /* Zentrierter Text für ein besseres Layout auf Mobilgeräten */
         }
-        h1 {
-            font-size: 36px; /* Anpassung der Schriftgröße für Mobilgeräte */
-            margin: 0;
-            color: #333;
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
         }
-        h2 {
-            font-size: 20px; /* Anpassung der Schriftgröße für Mobilgeräte */
-            color: #333;
-            margin: 5px 0 20px 0;
+
+        .hero-content h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
         }
-        p {
-            font-size: 16px; /* Anpassung der Schriftgröße für Mobilgeräte */
-            color: #333;
+
+        .hero-content p {
+            font-size: 1.2em;
             margin-bottom: 20px;
         }
-        .button {
-            display: inline-block;
-            padding: 12px 25px; /* Kleinere Schaltflächen für Mobilgeräte */
-            font-size: 14px;
-            margin: 5px;
-            border-radius: 30px;
-            text-decoration: none;
-            color: #333;
-            background-color: #ffffbf;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        .highlight {
+            color: #f39c12;
+            font-weight: bold;
         }
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row; /* Desktop: Inhalte nebeneinander */
-            }
-            .text-section {
-                text-align: left;
-            }
-            .avatar {
-                width: 200px;
-                height: 200px;
-            }
-            h1 {
-                font-size: 48px;
-            }
-            h2 {
-                font-size: 24px;
-            }
-            p {
-                font-size: 18px;
-            }
-            .button {
-                padding: 15px 30px;
-                font-size: 16px;
-            }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Avatar Bild -->
-        <img src="sticker-2.png" alt="Beyzanur Altinay" class="avatar">
-        
-        <div class="text-section">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="Lebenslauf_uni.pdf" target="_blank">Resume</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
             <h1>Beyzanur Altinay</h1>
             <h2>Wirtschaftsinformatik, Bachelor of Science</h2>
             <p>Ich bin eine Wirtschaftsinformatik-Absolventin mit einer Leidenschaft für <strong>kollaborative Technologien</strong>, die Prozesse optimieren und innovative Lösungen vorantreiben.</p>
             <p>Die besten Ideen entstehen bei einem Kaffeedate mit mir selbst ☕.</p>
-            
-            <!-- Schaltflächen -->
-            <a href="mailto:beyzanuraltinay@hotmail.de" class="button">E-Mail senden</a>
-            <a href="Lebenslauf_uni.pdf" class="button secondary">Lebenslauf ansehen</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/beyzanuraltinay" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/byzaltny" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beyzanur Altinay. All rights reserved.</p>
+    </footer>
 </body>
 </html>
