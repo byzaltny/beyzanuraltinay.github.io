@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyzanur Altinay - Projekte</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background-color: #111;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects-section {
+            padding: 100px 20px;
+            text-align: center;
+            background-color: #222;
+            min-height: 100vh;
+        }
+
+        .projects-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            text-align: left;
+        }
+
+        .project-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            background-color: #f39c12;
+            color: #111;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Lebenslauf_uni.pdf" target="_blank">Resume</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projects-section">
+        <h1>Projekte</h1>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Projekt 1: Responsify</h3>
+                <p>Ein einfaches Tool, mit dem Sie Ihre responsive Webseite testen können.</p>
+                <a href="projekt1.pdf" target="_blank">PDF ansehen</a>
+            </div>
+            <div class="project-card">
+                <h3>Projekt 2: Featured Image Notes</h3>
+                <p>Ein WordPress-Plugin, das es Ihnen ermöglicht, Notizen zu bestimmten Bildern hinzuzufügen.</p>
+                <a href="projekt2.pdf" target="_blank">PDF ansehen</a>
+            </div>
+            <div class="project-card">
+                <h3>Projekt 3: jQuery Fixed Header</h3>
+                <p>Ein jQuery-Plugin, das es ermöglicht, Kopfzeilen auf Webseiten fixiert zu halten.</p>
+                <a href="projekt3.pdf" target="_blank">PDF ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Beyzanur Altinay. All rights reserved.</p>
+    </footer>
+</body>
+</html>
