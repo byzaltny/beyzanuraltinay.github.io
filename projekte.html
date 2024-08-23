@@ -64,7 +64,7 @@
             position: relative;
             background-size: cover;
             background-position: center;
-            opacity: 0.9;
+            opacity: 0.9; /* 10% Transparenz */
         }
 
         .project-card h3 {
@@ -100,6 +100,22 @@
         footer p {
             margin: 0;
         }
+
+        /* Back Button */
+        .back-button {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #f39c12;
+            color: #111;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .back-button:hover {
+            background-color: #e68a00;
+        }
     </style>
 </head>
 <body>
@@ -120,22 +136,22 @@
             <div class="project-card">
                 <h3>Projekt 1: SmartDoc-Projekt</h3>
                 <p>Bei der Zusammenarbeit mit Bisonaire wurden Mockups für die Smartdoc-App erstellt.</p>
-                <a href="SmartDoc_Poster_WF.pdf" target="_blank">PDF</a>
+                <a href="SmartDoc_Poster_WF.pdf">PDF ansehen</a>
             </div>
             <div class="project-card">
                 <h3>Projekt 2: Future of Construction Logistics</h3>
                 <p>Design Thinking Projekt in Zusammenarbeit mit GEDA GmbH und Kooperation mit COLMAN Universität Tel Aviv.</p>
-                <a href="Geda_TeamBlue.pdf" target="_blank">PDF</a>
+                <a href="Geda_TeamBlue.pdf">PDF ansehen</a>
             </div>
             <div class="project-card">
                 <h3>Projekt 3: Reimagine urban space: Collaborative Governance Models</h3>
                 <p>Teilnahme am Creativity World Forum Bilbao in Zusammenarbeit mit DC Living Lab und Gruppenmitglieder aus 8 verschiedenen Ländern.</p>
-                <a href="UrbanBAT.pdf" target="_blank">PDF</a>
+                <a href="TA1 Urban bat CWF24.pdf">PDF ansehen</a>
             </div>
             <div class="project-card">
                 <h3>Projekt 4: StudiBot: Chatbot-Prototyp</h3>
                 <p>Entwicklung eines KI-Chatbot-Prototyps zur Unterstützung der Studierenden in einer Hochschulumgebung. Projekt noch nicht ABGESCHLOSSEN.</p>
-                <a href="studibotch.pdf" target="_blank">PDF</a>
+                <a href="StudiBot+.pdf">PDF ansehen</a>
             </div>
         </div>
     </section>
@@ -143,5 +159,25 @@
     <footer>
         <p>&copy; 2024 Beyzanur Altinay. All rights reserved.</p>
     </footer>
+
+    <!-- Back Button Script -->
+    <script>
+        document.querySelectorAll('.project-card a').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Verhindert das Standardverhalten
+                const pdfURL = this.getAttribute('href');
+                window.location.href = pdfURL; // Lädt das PDF im selben Tab
+            });
+        });
+
+        // Fügt einen Zurück-Button hinzu, wenn ein PDF angezeigt wird
+        if (window.location.href.includes('.pdf')) {
+            const backButton = document.createElement('a');
+            backButton.href = 'projekte.html';
+            backButton.classList.add('back-button');
+            backButton.textContent = 'Zurück zu den Projekten';
+            document.body.appendChild(backButton);
+        }
+    </script>
 </body>
 </html>
